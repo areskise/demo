@@ -1,38 +1,130 @@
-.App {
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  line-height: 24px;
+  padding: 12px;
+  background-color:antiquewhite;
+}
+
+header ul {
+  margin: 12px;
+  padding: 0;
+  display: flex;
+}
+
+header ul li{
+  margin: 0 12px;
+  list-style: none;
+}
+
+header ul li a{
+  text-decoration: none;
+  padding: 12px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.container h2 {
+  margin-left: 48px;
+  padding-top: 24px;
+}
+
+.list {
+  margin: 0 36px;
+  min-width: 200px;
+
+}
+
+.list .form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list .card {
+  margin: 12px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.list .card h3{
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  margin-top: 74px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.admin {
+  display: flex;
+  margin: 74px 36px 0;
+  justify-content: space-between;
+}
+
+.remove {
+  float: right;
+}
+
+.admin .item {
+  padding: 8px;
+  border: 1px solid slategray;
+}
+
+.admin input {
+  border: 1px solid slategray;
+  border-radius: 4px;
+  width: 250px;
+  margin-bottom: 12px;
+}
+
+.body-signin {
+  display: flex;
+  height: 100vh;
+  background-image: url(https://i.pinimg.com/originals/1d/d9/4d/1dd94dd5b314278ff000d52e518320aa.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  user-select: none;
+}
+
+.form-signin {
+  margin: auto;
+  padding: 30px;
+  background: linear-gradient(126.43deg, rgba(255, 255, 255, 0.75) 100%, rgba(255, 255, 255, 0.5) 67.6%);
+  box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+.form-signin form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.form-signin h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  color: #364E8B;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-signin input {
+  min-width: 200px;
+  padding: 12px 12px;
+  border: 2px solid #D8E2E9;
+  border-radius: 20px;
+  margin: .5rem 0;
+}
+
+.form-signin button {
+  border: none;
+  margin: .5rem 0;
+  border-radius: 10px;
+  padding: 12px 12px;
+  font-weight: 500;
+}
+
+.form-signin button:hover {
+  background-color: #D8E2E9;
+  cursor: pointer;
 }

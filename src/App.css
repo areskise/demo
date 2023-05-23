@@ -1,4 +1,5 @@
 header {
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
@@ -6,6 +7,7 @@ header {
   line-height: 24px;
   padding: 12px;
   background-color:antiquewhite;
+  justify-content: space-between;
 }
 
 header ul {
@@ -92,6 +94,9 @@ header ul li a{
   background: linear-gradient(126.43deg, rgba(255, 255, 255, 0.75) 100%, rgba(255, 255, 255, 0.5) 67.6%);
   box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .form-signin form {
